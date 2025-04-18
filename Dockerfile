@@ -13,7 +13,7 @@ RUN apt-get update \
   # CLEAR
   && apt-get clean
 
-EXPOSE 3000
+EXPOSE 80
 
 COPY . .
 

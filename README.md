@@ -20,6 +20,6 @@ npm run docker:start
 
 ## Endpoint da API
 
-Endereço de documentação: http://localhost:3000/ping
+Endereço de documentação: http://localhost/ping
 
 - Orlando Nascimento
