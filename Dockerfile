@@ -30,6 +30,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN npx -y playwright@1.51.1 install --with-deps
 
+RUN npx playwright install
+
 EXPOSE 80
 
 COPY . .
