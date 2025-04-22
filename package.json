@@ -13,6 +13,7 @@
     "docker:clear": "docker system tem prune -a"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "playwright": "^1.52.0"
   }
 }
