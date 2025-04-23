@@ -1,0 +1,10 @@
+services:
+  api:
+    container_name: ping_pong_api
+    build: .
+    volumes:
+      - ./:/usr/src:delegated
+    ports:
+      - 80:80
+    environment:
+      - PORT=80
