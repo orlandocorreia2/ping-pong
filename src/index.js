@@ -7,9 +7,11 @@ app.get("/ping", async (_, res) => {
   const browser = await playwright.chromium.launch({
     headless: true,
   });
-  const context = await browser.newContext(
-    playwright.devices["Desktop Chrome"]
-  );
+  const context = await browser.newContext({
+    ...playwright.devices["Desktop Chrome"],
+    acceptDownloads: true,
+    ignoreHTTPSErrors: true,
+  });
   const page = await context.newPage();
 
   await page.goto(
