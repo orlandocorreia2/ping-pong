@@ -32,7 +32,7 @@ RUN npx -y playwright@1.51.1 install --with-deps
 
 RUN npx playwright install
 
-EXPOSE 80
+EXPOSE 3000
 
 COPY . .
 

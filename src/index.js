@@ -1,7 +1,7 @@
 const express = require("express");
 const playwright = require("playwright");
 const app = express();
-const port = 80;
+const port = 3000;
 
 app.get("/ping", async (_, res) => {
   const browser = await playwright.chromium.launch({
