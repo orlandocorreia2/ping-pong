@@ -36,4 +36,4 @@ EXPOSE 3000
 
 COPY . .
 
-ENTRYPOINT ["./.docker/start.sh"]
+ENTRYPOINT [".docker/start.sh"]
