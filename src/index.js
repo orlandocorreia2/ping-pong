@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get("/ping", async (_, res) => {
-  const browser = await playwright.chromium.launch({
+  const browser = await playwright.firefox.launch({
     headless: true,
   });
   const context = await browser.newContext({
