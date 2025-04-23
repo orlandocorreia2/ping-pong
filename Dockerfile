@@ -13,6 +13,8 @@ RUN apt-get update \
   # CLEAR
   && apt-get clean
 
+RUN npx playwright install-deps
+
 # Instalação das dependências do sistema
 RUN apt-get update && apt-get install -y \
   libx11-xcb1 \
@@ -27,8 +29,6 @@ RUN apt-get update && apt-get install -y \
   xdg-utils \
   --no-install-recommends && \
   rm -rf /var/lib/apt/lists/*
-
-RUN npx -y playwright@1.51.1 install --with-deps
 
 RUN npx playwright install
 
